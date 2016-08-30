@@ -1,18 +1,18 @@
 //
-//  AretesDetails.m
+//  BolsasDetails.m
 //  Elliev2
 //
 //  Created by Jose Maciel on 8/30/16.
 //  Copyright © 2016 Jose Maciel. All rights reserved.
 //
 
-#import "AretesDetails.h"
+#import "BolsasDetails.h"
 #import "Google/Analytics.h"
-@interface AretesDetails ()
+@interface BolsasDetails ()
 @property (nonatomic, strong, readwrite) PayPalConfiguration *payPalConfiguration;
 @end
 
-@implementation AretesDetails
+@implementation BolsasDetails
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,6 +29,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 //Paypal
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
@@ -53,7 +54,7 @@
     
     //Google Analytics
     id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
-    [tracker set:kGAIScreenName value:@"Aretes Details"];
+    [tracker set:kGAIScreenName value:@"Bolsas Details"];
     [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
 }
 - (IBAction)pay {

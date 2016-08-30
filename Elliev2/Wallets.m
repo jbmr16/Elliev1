@@ -1,14 +1,14 @@
 //
-//  Aretes.m
+//  Wallets.m
 //  Elliev2
 //
 //  Created by Jose Maciel on 8/30/16.
 //  Copyright © 2016 Jose Maciel. All rights reserved.
 //
 
-#import "Aretes.h"
+#import "Wallets.h"
 
-@interface Aretes ()
+@interface Wallets ()
 @property NSMutableArray *Titles;
 @property NSMutableArray *Photos;
 @property NSMutableArray *Details;
@@ -19,11 +19,11 @@
 @property NSString *stPrice;
 @end
 
-@implementation Aretes
+@implementation Wallets
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initController];
+     [self initController];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,10 +32,10 @@
 }
 
 - (void)initController {
-    self.Titles   = [[NSMutableArray alloc] initWithObjects: @"ART001", @"ART002", @"ART003", @"ART004",@"ART005",@"ART006", @"ART007", @"ART008", @"ART009",@"ART0010",nil];
-    self.Photos   = [[NSMutableArray alloc] initWithObjects: @"a1.jpg", @"a2.jpg", @"a3.jpg", @"a4.jpg",@"a5.jpg",@"a6.jpg", @"a7.jpg", @"a8.jpg", @"a9.jpg",@"a10.jpg",nil];
-    self.Details   = [[NSMutableArray alloc] initWithObjects:  @"¡NUEVO! Aretes de cristal tipo austriaco color Turqueza y transparente", @"¡NUEVO! Aretes de cristal tipo austriaco color Lila y transparente", @" ¡NUEVO! Aretes con adornos verdes y corazones", @"¡NUEVO! Aretes con adornos turqueza y corazones",@"¡NUEVO! Aretes con adornos negros y corazones",@"¡NUEVO! Aretes con piedras en rojo, cuentas y mariposas metálicas", @"¡NUEVO! Aretes con piedras fucsia, cuentas y mariposas metálicas", @"¡NUEVO! Aretes de aros metalizados grandes", @"¡NUEVO! Aretes de perlas cristal color rosa de 2 tamaños y adorno metálico.",@"¡NUEVO! Aretes con perlas tipo cristal color rosa de 2 tamaños y cristal transparente",nil];
-    self.Price   = [[NSMutableArray alloc] initWithObjects: @"33.00", @"21.14", @"18.12", @"33.2",@"22.2",@"15.00", @".26.14", @"17.12", @"36.2",@"29.2",nil];
+    self.Titles   = [[NSMutableArray alloc] initWithObjects: @"WLL001", @"WLL002", @"WLL003", @"WLL004",@"WLL005",@"WLL006", @"WLL007", @"WLL008", @"WLL009",@"WLL0010",nil];
+    self.Photos   = [[NSMutableArray alloc] initWithObjects: @"w1.jpg", @"w2.jpg", @"w3.jpg", @"w4.jpg",@"w5.jpg",@"w6.jpg", @"w7.jpg", @"w8.jpg", @"w9.jpg",@"w10.jpg",nil];
+    self.Details   = [[NSMutableArray alloc] initWithObjects:  @"Billetero y monedero mediano con solapa en piel de ternera con el Anagrama en relieve. Cacterísticas: compartimento central para monedas, cinco espacios para tarjetas,", @" El T Pouch con cierre de cremallera en piel de ternera ejemplifica la maestría artesanal de Loewe; muestra una silueta limpia y entallada con la característica construcción artesanal de dos pieles en forma de T", @"Cartera grande de piel de ternera con Anagrama grabado y solapa. Características principales: catorce compartimentos para tarjetas, ", @"Bolso de mano con cremallera en piel suave. El dibujo en hongos está plasmado utilizando la artesana técnica de Marquetería en piel, con diferentes piezas de piel cortadas a medida e incrustadas.",@"spaciosa cartera de piel flexible con logo de Tommy Hilfiger en la solapa.",@"Cartera billetero con cierre de solapa en colores naturales. ", @"Billetero de piel vacuno con grabado de flores de alta calidad. Monedero exterior con cierre de botón a presión y dos departamentos para monedas separados por un bolsillo con cremallera", @"Billetero de piel vacuno con grabado de flores de alta calidad.Monedero exterior con cierre de botón a presión y dos departamentos para monedas separados por un bolsillo con cremallera.", @"Conjunto de monedero y billetero a juego. En piel vacuno con grabado imitando a cocodrilo.",@"Monedero y billetero de mujer en piel vacuno acabado serraje combinado con piel lisa Disponible en varios colores, todos muy alegres y llamativos",nil];
+    self.Price   = [[NSMutableArray alloc] initWithObjects: @"331.00", @".222.14", @"144.12", @"322.2",@"266.2",@"199.00", @".255.14", @"144.12", @"322.2",@"233.2",nil];
     
 }
 /**********************************************************************************************/
@@ -55,11 +55,11 @@
 //-------------------------------------------------------------------------------
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     //Initialize cells
-    cellAret *cell = (cellAret *)[tableView dequeueReusableCellWithIdentifier:@"cellAret"];
+    cellWall *cell = (cellWall *)[tableView dequeueReusableCellWithIdentifier:@"cellWall"];
     
     if (cell == nil) {
-        [tableView registerNib:[UINib nibWithNibName:@"cellAret" bundle:nil] forCellReuseIdentifier:@"cellAret"];
-        cell = [tableView dequeueReusableCellWithIdentifier:@"cellAret"];
+        [tableView registerNib:[UINib nibWithNibName:@"cellWall" bundle:nil] forCellReuseIdentifier:@"cellWall"];
+        cell = [tableView dequeueReusableCellWithIdentifier:@"cellWall"];
     }
     //Fill cell with info from arrays
     cell.lblprod.text = self.Titles[indexPath.row];
@@ -76,15 +76,15 @@
     self.stPrice = self.Price[indexPath.row];
     
     
-    [self performSegueWithIdentifier:@"goToAret" sender:self];
+    [self performSegueWithIdentifier:@"goToWall" sender:self];
 }
 
 //--------------
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    if ([segue.destinationViewController isKindOfClass:[AretesDetails class]]) {
+    if ([segue.destinationViewController isKindOfClass:[WalletsDetails class]]) {
         
-        AretesDetails *destination     = [segue destinationViewController];
+        WalletsDetails *destination     = [segue destinationViewController];
         destination.TitleSelected        = self.stTitleSelected;
         destination.PhotoSelected        = self.stPhotoSelected;
         destination.DetailsSelected = self.stDetails;

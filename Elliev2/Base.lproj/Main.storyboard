@@ -13,11 +13,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="thV-ux-yRA" customClass="GIDSignInButton">
-                                <rect key="frame" x="48" y="339" width="240" height="26"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageedit_1_9176689896.png" id="vbf-og-Gff">
                                 <rect key="frame" x="20" y="40" width="290" height="196"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -31,7 +26,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="t7V-lr-vwn">
                                 <rect key="frame" x="208" y="518" width="80" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Sing Out"/>
                                 <connections>
                                     <action selector="didTapSignOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nbQ-Kg-GlG"/>
@@ -48,6 +43,11 @@
                                     <segue destination="Uli-7h-rjp" kind="modal" identifier="goToCat" id="uYA-la-8SH"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" id="QcL-8c-Y86" customClass="GIDSignInButton">
+                                <rect key="frame" x="94" y="339" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.98019695281982422" green="0.49774234767095665" blue="0.93669407880719413" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -68,9 +68,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="150" sectionHeaderHeight="32" sectionFooterHeight="32" id="hi9-rw-V84">
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="150" sectionHeaderHeight="1" sectionFooterHeight="1" id="hi9-rw-V84">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <connections>
@@ -94,15 +94,23 @@
         <scene sceneID="jWj-D7-be5">
             <objects>
                 <viewController id="06C-QE-knW" userLabel="Aretes" customClass="Aretes" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="83e-pA-3X7">
+                    <view key="view" contentMode="scaleToFill" id="HDQ-ol-yOG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Oed-AL-MFt">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="06C-QE-knW" id="JPu-lF-IHv"/>
+                                    <outlet property="delegate" destination="06C-QE-knW" id="7If-sZ-Isi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="dataSource" destination="06C-QE-knW" id="O2s-oZ-UhI"/>
-                            <outlet property="delegate" destination="06C-QE-knW" id="Umh-rj-LmN"/>
-                        </connections>
-                    </tableView>
+                    </view>
                     <navigationItem key="navigationItem" id="yjI-NQ-7gw"/>
                     <connections>
                         <segue destination="5q0-rm-pde" kind="push" identifier="goToAret" id="OVt-hw-dFG"/>
@@ -111,6 +119,250 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOt-vj-ygK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1496" y="652"/>
+        </scene>
+        <!--Bolsas-->
+        <scene sceneID="16A-kR-W0C">
+            <objects>
+                <viewController id="lIM-Rd-0wV" customClass="Bolsas" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b8b-ci-ptM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1TD-ft-FcS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="lIM-Rd-0wV" id="n6A-uo-GkD"/>
+                                    <outlet property="delegate" destination="lIM-Rd-0wV" id="5QM-ko-8Qj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wyw-28-8rN"/>
+                    <connections>
+                        <segue destination="KtJ-2f-mfK" kind="push" identifier="goToBag" id="pmN-0V-EqF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0kL-pn-CXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1496" y="1317"/>
+        </scene>
+        <!--Wallets-->
+        <scene sceneID="AKq-XK-z6O">
+            <objects>
+                <viewController id="naQ-CP-bXW" customClass="Wallets" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OHJ-iL-UGW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4h3-wL-S4M">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="naQ-CP-bXW" id="gdx-nQ-Ptl"/>
+                                    <outlet property="delegate" destination="naQ-CP-bXW" id="HEt-bE-usc"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ge3-hr-iXi"/>
+                    <connections>
+                        <segue destination="zxd-LI-RV0" kind="push" identifier="goToWall" id="SVc-TJ-lhh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hxu-wR-EPl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1489" y="1979"/>
+        </scene>
+        <!--Wallets Details-->
+        <scene sceneID="jiG-QW-ybI">
+            <objects>
+                <viewController id="zxd-LI-RV0" customClass="WalletsDetails" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ipa-PI-zxT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="CIm-a6-f1Z">
+                                <rect key="frame" x="0.0" y="66" width="320" height="173"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="27Q-kD-k7T">
+                                        <rect key="frame" x="8" y="4" width="304" height="166"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bolsas ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nqD-8P-YZw">
+                                <rect key="frame" x="3" y="264" width="82" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uki-df-i3s">
+                                <rect key="frame" x="71" y="293" width="249" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b9f-bS-7k0">
+                                <rect key="frame" x="3" y="342" width="304" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paypal.png" id="HGw-HG-Xr9">
+                                <rect key="frame" x="35" y="465" width="240" height="55"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nAN-3v-TeE">
+                                <rect key="frame" x="84" y="264" width="223" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n1n-x4-AwQ">
+                                <rect key="frame" x="3" y="322" width="111" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio: $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Og6-BH-qxd">
+                                <rect key="frame" x="3" y="293" width="73" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MdZ-6S-HFp">
+                                <rect key="frame" x="118" y="432" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                <state key="normal" title="Comprar!">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="pay" destination="zxd-LI-RV0" eventType="touchUpInside" id="Zg4-JY-wxC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lwJ-Sh-0Dq"/>
+                    <connections>
+                        <outlet property="buybttn" destination="MdZ-6S-HFp" id="UAb-dR-Yf6"/>
+                        <outlet property="lblPrice" destination="uki-df-i3s" id="8W1-aw-E65"/>
+                        <outlet property="lblTitle" destination="nAN-3v-TeE" id="KEy-SD-iG3"/>
+                        <outlet property="lbldesc" destination="b9f-bS-7k0" id="TTb-QF-Z2U"/>
+                        <outlet property="lblimg" destination="27Q-kD-k7T" id="JZy-Dz-xH2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KlE-0n-t3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881" y="1986"/>
+        </scene>
+        <!--Bolsas Details-->
+        <scene sceneID="5oh-9a-557">
+            <objects>
+                <viewController id="KtJ-2f-mfK" customClass="BolsasDetails" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tXn-QT-7KF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="Wzp-oH-LWQ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="173"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8x5-DA-kkd">
+                                        <rect key="frame" x="8" y="4" width="304" height="166"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IHQ-SS-Q3P">
+                                <rect key="frame" x="87" y="262" width="223" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="azd-A3-Fr2">
+                                <rect key="frame" x="71" y="291" width="249" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paypal.png" id="Yqe-z4-O9w">
+                                <rect key="frame" x="35" y="463" width="240" height="55"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="btJ-dm-30L">
+                                <rect key="frame" x="118" y="430" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                <state key="normal" title="Comprar!">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="pay" destination="KtJ-2f-mfK" eventType="touchUpInside" id="MmU-pe-ph2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gge-J4-pzU">
+                                <rect key="frame" x="3" y="340" width="304" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bolsas ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MMg-Ct-wPh">
+                                <rect key="frame" x="3" y="262" width="82" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3jz-Ft-Zbu">
+                                <rect key="frame" x="3" y="320" width="111" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio: $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3M3-F6-6AS">
+                                <rect key="frame" x="3" y="291" width="73" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v9N-yw-O6u"/>
+                    <connections>
+                        <outlet property="buybttn" destination="btJ-dm-30L" id="gNz-TE-lw3"/>
+                        <outlet property="lblPrice" destination="azd-A3-Fr2" id="dDw-U8-dYp"/>
+                        <outlet property="lblTitle" destination="IHQ-SS-Q3P" id="Jek-yZ-cG9"/>
+                        <outlet property="lbldesc" destination="Gge-J4-pzU" id="Djg-h9-8Yu"/>
+                        <outlet property="lblimg" destination="8x5-DA-kkd" id="MIV-S3-brx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gu2-Qw-lvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881" y="1321"/>
         </scene>
         <!--AretesDetail-->
         <scene sceneID="AAt-Lg-GUO">
@@ -164,7 +416,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EUg-n5-9eI">
-                                <rect key="frame" x="71" y="292" width="249" height="21"/>
+                                <rect key="frame" x="74" y="292" width="249" height="21"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -202,7 +454,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aqr-GU-U4I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1886" y="653"/>
+            <point key="canvasLocation" x="1870" y="659"/>
         </scene>
         <!--Collares Details-->
         <scene sceneID="9FZ-70-1A8">
@@ -310,6 +562,8 @@
                     <connections>
                         <segue destination="KTw-sK-893" kind="relationship" relationship="viewControllers" id="nhq-Ov-DmZ"/>
                         <segue destination="vn6-cb-WOO" kind="relationship" relationship="viewControllers" id="dd1-YO-ael"/>
+                        <segue destination="p0N-HU-eR1" kind="relationship" relationship="viewControllers" id="huV-95-7Lx"/>
+                        <segue destination="nOa-wf-9UB" kind="relationship" relationship="viewControllers" id="but-sm-cJ8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQS-Zu-rem" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -320,7 +574,11 @@
         <scene sceneID="j8Q-8K-VOV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KTw-sK-893" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Collares" image="google.png" selectedImage="gplus.png" id="ZrL-w8-b3y"/>
+                    <tabBarItem key="tabBarItem" title="Collares" image="woman.png" id="ZrL-w8-b3y">
+                        <string key="selectedImage" base64-UTF8="YES">
+CQ
+</string>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sBQ-VZ-HCd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -339,7 +597,7 @@
         <scene sceneID="cYV-NH-O2S">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vn6-cb-WOO" userLabel="Aretes" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="1" title="Aretes" id="Cle-nU-uOu"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Aretes" image="star.png" id="Cle-nU-uOu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WMo-nd-FFp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -354,11 +612,56 @@
             </objects>
             <point key="canvasLocation" x="1076" y="652"/>
         </scene>
+        <!--Bolsas-->
+        <scene sceneID="KiZ-mP-BIA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p0N-HU-eR1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="Bolsas" image="spiral.png" id="rdS-7b-B5c"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LLq-55-thG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lIM-Rd-0wV" kind="relationship" relationship="rootViewController" id="7pL-ec-R8r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ee5-FX-Q7M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="1317"/>
+        </scene>
+        <!--Carteras-->
+        <scene sceneID="4oj-dG-JmP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nOa-wf-9UB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Carteras" image="wallet.png" id="iDO-lb-3sO"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l1u-9u-a7d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="naQ-CP-bXW" kind="relationship" relationship="rootViewController" id="x23-CV-4km"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wz3-jB-sje" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="1979"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="google.png" width="18" height="18"/>
-        <image name="gplus.png" width="24" height="24"/>
+        <image width="724" height="724">
+            <string key="name" base64-UTF8="YES">
+CQ
+</string>
+        </image>
         <image name="imageedit_1_9176689896.png" width="724" height="724"/>
         <image name="paypal.png" width="567" height="89"/>
+        <image name="spiral.png" width="30" height="30"/>
+        <image name="star.png" width="30" height="30"/>
+        <image name="wallet.png" width="30" height="30"/>
+        <image name="woman.png" width="30" height="30"/>
     </resources>
 </document>

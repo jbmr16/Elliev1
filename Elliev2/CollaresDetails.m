@@ -56,7 +56,7 @@
     
     //Google Analytics
     id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
-    [tracker set:kGAIScreenName value:@"CollaresDetails"];
+    [tracker set:kGAIScreenName value:@"Collares Details"];
     [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
 }
 - (IBAction)pay {
@@ -66,7 +66,7 @@
     
     // Amount, currency, and description
     payment.amount = [[NSDecimalNumber alloc] initWithString:_PriceSelected];
-    payment.currencyCode = @"USD";
+    payment.currencyCode = @"MXN";
     payment.shortDescription = _TitleSelected;
     
     // Use the intent property to indicate that this is a "sale" payment,

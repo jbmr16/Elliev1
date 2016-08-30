@@ -34,8 +34,8 @@
 - (void)initController {
     self.Titles   = [[NSMutableArray alloc] initWithObjects: @"CLL001", @"CLL002", @"CLL003", @"CLL004",@"CLL005",@"CLL006", @"CLL007", @"CLL008", @"CLL009",@"CLL0010",nil];
     self.Photos   = [[NSMutableArray alloc] initWithObjects: @"c1.jpg", @"c2.jpg", @"c3.jpg", @"c4.jpg",@"c5.jpg",@"c6.jpg", @"c7.jpg", @"c8.jpg", @"c9.jpg",@"c10.jpg",nil];
-    self.Details   = [[NSMutableArray alloc] initWithObjects:  @"c1.jpg", @"c2.jpg", @"c3.jpg", @"c4.jpg",@"c5.jpg",@"c6.jpg", @"c7.jpg", @"c8.jpg", @"c9.jpg",@"c10.jpg",nil];
-    self.Price   = [[NSMutableArray alloc] initWithObjects: @"1.00", @".2.14", @"1.12", @"3.2",@"2.2",@"1.00", @".2.14", @"1.12", @"3.2",@"2.2",nil];
+    self.Details   = [[NSMutableArray alloc] initWithObjects:  @"¡NUEVO!Collar con cristales tipo austriaco, facetadas color turqueza y transparente con detalles metálicos y cadena.", @"¡NUEVO!Collar con cristales tipo austriaco, facetadas color lila y transparente con detalles metálicos y cadena.", @"¡NUEVO! Collar de cordón y piedras en rojo, con cadenas, detalles metálicos y mariposa.", @"¡NUEVO! Collar de cordón negro, con aros y mariposas metalizados",@"Collar con cordones beige y hueso entrelazados, cuentas metálicas, aros metalizados y piedra color hueso.",@"Collar con cordones blanco y negro entrelazado, cuentas metálicas, perlas cristal blanca y facetada negra.", @"¡NUEVO! Collar de perlas cristal rosa con detalles metálicos y un dije de la suerte de elefante", @"¡NUEVO! Collar de perlas tipo cristal color azul en 2 tamaños, con cristal transparente y aros brillantes", @"¡NUEVO! Collar de cordón beige anudado, haciendo contraste el metal con las piedras beige veteadas",@"¡NUEVO! Collar de piedras beige con vetas, doble colgante y cordón de gamuza.",nil];
+    self.Price   = [[NSMutableArray alloc] initWithObjects: @"122.0", @".112.14", @"113.12", @"132.2",@"211.2",@"156.00", @".211.14", @"111.12", @"300.2",@"201.2",nil];
     
 }
 /**********************************************************************************************/

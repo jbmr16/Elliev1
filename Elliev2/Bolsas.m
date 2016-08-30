@@ -1,14 +1,14 @@
 //
-//  Aretes.m
+//  Bolsas.m
 //  Elliev2
 //
 //  Created by Jose Maciel on 8/30/16.
 //  Copyright © 2016 Jose Maciel. All rights reserved.
 //
 
-#import "Aretes.h"
+#import "Bolsas.h"
 
-@interface Aretes ()
+@interface Bolsas ()
 @property NSMutableArray *Titles;
 @property NSMutableArray *Photos;
 @property NSMutableArray *Details;
@@ -19,23 +19,22 @@
 @property NSString *stPrice;
 @end
 
-@implementation Aretes
+@implementation Bolsas
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initController];
+     [self initController];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 - (void)initController {
-    self.Titles   = [[NSMutableArray alloc] initWithObjects: @"ART001", @"ART002", @"ART003", @"ART004",@"ART005",@"ART006", @"ART007", @"ART008", @"ART009",@"ART0010",nil];
-    self.Photos   = [[NSMutableArray alloc] initWithObjects: @"a1.jpg", @"a2.jpg", @"a3.jpg", @"a4.jpg",@"a5.jpg",@"a6.jpg", @"a7.jpg", @"a8.jpg", @"a9.jpg",@"a10.jpg",nil];
-    self.Details   = [[NSMutableArray alloc] initWithObjects:  @"¡NUEVO! Aretes de cristal tipo austriaco color Turqueza y transparente", @"¡NUEVO! Aretes de cristal tipo austriaco color Lila y transparente", @" ¡NUEVO! Aretes con adornos verdes y corazones", @"¡NUEVO! Aretes con adornos turqueza y corazones",@"¡NUEVO! Aretes con adornos negros y corazones",@"¡NUEVO! Aretes con piedras en rojo, cuentas y mariposas metálicas", @"¡NUEVO! Aretes con piedras fucsia, cuentas y mariposas metálicas", @"¡NUEVO! Aretes de aros metalizados grandes", @"¡NUEVO! Aretes de perlas cristal color rosa de 2 tamaños y adorno metálico.",@"¡NUEVO! Aretes con perlas tipo cristal color rosa de 2 tamaños y cristal transparente",nil];
-    self.Price   = [[NSMutableArray alloc] initWithObjects: @"33.00", @"21.14", @"18.12", @"33.2",@"22.2",@"15.00", @".26.14", @"17.12", @"36.2",@"29.2",nil];
+    self.Titles   = [[NSMutableArray alloc] initWithObjects: @"BLS001", @"BLS002", @"BLS003", @"BLS004",@"BLS005",@"BLS006", @"BLS007", @"BLS008", @"BLS009",@"BLS0010",nil];
+    self.Photos   = [[NSMutableArray alloc] initWithObjects: @"b1.jpg", @"b2.jpg", @"b3.jpg", @"b4.jpg",@"b5.jpg",@"b6.jpg", @"b7.jpg", @"b8.jpg", @"b9.jpg",@"b10.jpg",nil];
+    self.Details   = [[NSMutableArray alloc] initWithObjects:  @"Bolso de mano color negro. Detalle bolsillo exterior. Metalería dorada. Asas de mano y asa de hombro ajustable y extraible. Varios compartimentos internos. Cierre mediante imán y cremallera", @"Bolso formato city color blanco. Bolsillo exterior con detalle de colgador en forma de candado. Metalería dorada. Asas de mano y asa de hombro ajustable y extraíble. Forro con bolsillo interior.", @"Mochila convertible en bandolera color negro. Dos asas extraíbles y ajustables y un asa en cadena extraíble. Forro interior con bolsillo.", @"Bolso formato bandolera. Acabado acolchado. Metalería dorada. Asa de hombro ajustable en cadena. Forro con bolsillo interior.",@"Bolso formato city de piel color gris. Bolsillo en la parte delantera con dos cremalleras laterales con tiradores de piel y cierre mediante imán. Interior forrado con un bolsillo.",@"Bolso de piel formato shopper. Color cuero. Detalle asas ajustables con hebillas redondas. Forro interior con dos compartimientos y un bolsillo. ", @"Bolso formato mochila mini color azul. Detalle bolsillo exterior con cremallera. Metalería plateada. Asas de hombro en combinación de materiales. Cierre mediante fruncido.", @"Bolso formato mochila mini en combinación de colores. Detalle bolsillo exterior con cremallera. Metalería plateada. Asas de hombro en combinación de materiales.", @"Bolso bandolera en combinación de colores. Detalle abalorios en combinación de colores y formas. Asa de hombro con trenzado. Forro interior. Cierre mediante fruncido y borlas trabajadas.",@"Bolso formato saca de piel color teja. Asa de mano y asa de hombro extraíble. Cierre mediante fruncido con tira e imán interior. Forro con bolsillo interior. ",nil];
+    self.Price   = [[NSMutableArray alloc] initWithObjects: @"888.00", @".766.14", @"911.12", @"973.2",@"872.2",@"651.00", @".882.14", @"991.12", @"773.2",@"882.2",nil];
     
 }
 /**********************************************************************************************/
@@ -55,11 +54,11 @@
 //-------------------------------------------------------------------------------
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     //Initialize cells
-    cellAret *cell = (cellAret *)[tableView dequeueReusableCellWithIdentifier:@"cellAret"];
+    cellBolsa *cell = (cellBolsa *)[tableView dequeueReusableCellWithIdentifier:@"cellBolsa"];
     
     if (cell == nil) {
-        [tableView registerNib:[UINib nibWithNibName:@"cellAret" bundle:nil] forCellReuseIdentifier:@"cellAret"];
-        cell = [tableView dequeueReusableCellWithIdentifier:@"cellAret"];
+        [tableView registerNib:[UINib nibWithNibName:@"cellBolsa" bundle:nil] forCellReuseIdentifier:@"cellBolsa"];
+        cell = [tableView dequeueReusableCellWithIdentifier:@"cellBolsa"];
     }
     //Fill cell with info from arrays
     cell.lblprod.text = self.Titles[indexPath.row];
@@ -76,15 +75,15 @@
     self.stPrice = self.Price[indexPath.row];
     
     
-    [self performSegueWithIdentifier:@"goToAret" sender:self];
+    [self performSegueWithIdentifier:@"goToBag" sender:self];
 }
 
 //--------------
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    if ([segue.destinationViewController isKindOfClass:[AretesDetails class]]) {
+    if ([segue.destinationViewController isKindOfClass:[BolsasDetails class]]) {
         
-        AretesDetails *destination     = [segue destinationViewController];
+        BolsasDetails *destination     = [segue destinationViewController];
         destination.TitleSelected        = self.stTitleSelected;
         destination.PhotoSelected        = self.stPhotoSelected;
         destination.DetailsSelected = self.stDetails;
@@ -118,5 +117,4 @@
     cell.frame = CGRectMake(0, cell.frame.origin.y, cell.frame.size.width, cell.frame.size.height);
     [UIView commitAnimations];
 }
-
 @end

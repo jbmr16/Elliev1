@@ -1,18 +1,18 @@
 //
-//  AretesDetails.m
+//  WalletsDetails.m
 //  Elliev2
 //
 //  Created by Jose Maciel on 8/30/16.
 //  Copyright © 2016 Jose Maciel. All rights reserved.
 //
 
-#import "AretesDetails.h"
+#import "WalletsDetails.h"
 #import "Google/Analytics.h"
-@interface AretesDetails ()
+@interface WalletsDetails ()
 @property (nonatomic, strong, readwrite) PayPalConfiguration *payPalConfiguration;
 @end
 
-@implementation AretesDetails
+@implementation WalletsDetails
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -53,7 +53,7 @@
     
     //Google Analytics
     id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
-    [tracker set:kGAIScreenName value:@"Aretes Details"];
+    [tracker set:kGAIScreenName value:@"Wallets Details"];
     [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
 }
 - (IBAction)pay {
