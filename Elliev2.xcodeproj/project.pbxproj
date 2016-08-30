@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CE5FAE1D020FA4B4E6EA80E /* Pods_Elliev2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654EB78F292A06ECA5133BB3 /* Pods_Elliev2.framework */; };
 		1605570E1D750B6F00E31CC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1605570D1D750B6F00E31CC1 /* main.m */; };
 		160557111D750B6F00E31CC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 160557101D750B6F00E31CC1 /* AppDelegate.m */; };
 		160557141D750B6F00E31CC1 /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = 160557131D750B6F00E31CC1 /* Start.m */; };
@@ -15,6 +16,40 @@
 		1605571C1D750B6F00E31CC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1605571A1D750B6F00E31CC1 /* LaunchScreen.storyboard */; };
 		160557271D750B6F00E31CC1 /* Elliev2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 160557261D750B6F00E31CC1 /* Elliev2Tests.m */; };
 		160557321D750B6F00E31CC1 /* Elliev2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 160557311D750B6F00E31CC1 /* Elliev2UITests.m */; };
+		16F3A4291D75279300BE4EE7 /* 13407014_1749903378590592_1549225142529320261_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A4281D75279300BE4EE7 /* 13407014_1749903378590592_1549225142529320261_n.jpg */; };
+		16F3A42B1D7527D100BE4EE7 /* imageedit_1_9176689896.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A42A1D7527D100BE4EE7 /* imageedit_1_9176689896.png */; };
+		16F3A42D1D75340900BE4EE7 /* ruby.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A42C1D75340900BE4EE7 /* ruby.png */; };
+		16F3A42F1D7534ED00BE4EE7 /* heart.gif in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A42E1D7534ED00BE4EE7 /* heart.gif */; };
+		16F3A4321D75357D00BE4EE7 /* Collares.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F3A4311D75357D00BE4EE7 /* Collares.m */; };
+		16F3A4371D7535D300BE4EE7 /* cellColl.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F3A4351D7535D200BE4EE7 /* cellColl.m */; };
+		16F3A4381D7535D300BE4EE7 /* cellColl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A4361D7535D200BE4EE7 /* cellColl.xib */; };
+		16F3A43C1D7537A300BE4EE7 /* CollaresDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F3A43B1D7537A300BE4EE7 /* CollaresDetails.m */; };
+		16F3A4461D753A6F00BE4EE7 /* c1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A43D1D753A6F00BE4EE7 /* c1.jpg */; };
+		16F3A4471D753A6F00BE4EE7 /* c2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A43E1D753A6F00BE4EE7 /* c2.jpg */; };
+		16F3A4481D753A6F00BE4EE7 /* c4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A43F1D753A6F00BE4EE7 /* c4.jpg */; };
+		16F3A4491D753A6F00BE4EE7 /* c5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A4401D753A6F00BE4EE7 /* c5.jpg */; };
+		16F3A44A1D753A6F00BE4EE7 /* c6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A4411D753A6F00BE4EE7 /* c6.jpg */; };
+		16F3A44B1D753A6F00BE4EE7 /* c7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A4421D753A6F00BE4EE7 /* c7.jpg */; };
+		16F3A44C1D753A6F00BE4EE7 /* c8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A4431D753A6F00BE4EE7 /* c8.jpg */; };
+		16F3A44D1D753A6F00BE4EE7 /* c9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A4441D753A6F00BE4EE7 /* c9.jpg */; };
+		16F3A44E1D753A6F00BE4EE7 /* c10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A4451D753A6F00BE4EE7 /* c10.jpg */; };
+		16F3A4501D753B2700BE4EE7 /* c3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A44F1D753B2700BE4EE7 /* c3.jpg */; };
+		16F3A4521D75D01000BE4EE7 /* paypal.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A4511D75D01000BE4EE7 /* paypal.png */; };
+		16F3A4561D75F0A400BE4EE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A4551D75F0A400BE4EE7 /* GoogleService-Info.plist */; };
+		16F3A4591D75F89600BE4EE7 /* Aretes.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F3A4581D75F89600BE4EE7 /* Aretes.m */; };
+		16F3A45C1D75F8B300BE4EE7 /* AretesDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F3A45B1D75F8B300BE4EE7 /* AretesDetails.m */; };
+		16F3A4601D75F96300BE4EE7 /* cellAret.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F3A45E1D75F96300BE4EE7 /* cellAret.m */; };
+		16F3A4611D75F96300BE4EE7 /* cellAret.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A45F1D75F96300BE4EE7 /* cellAret.xib */; };
+		16F3A46C1D75FC7B00BE4EE7 /* a1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A4621D75FC7B00BE4EE7 /* a1.jpg */; };
+		16F3A46D1D75FC7B00BE4EE7 /* a2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A4631D75FC7B00BE4EE7 /* a2.jpg */; };
+		16F3A46E1D75FC7B00BE4EE7 /* a3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A4641D75FC7B00BE4EE7 /* a3.jpg */; };
+		16F3A46F1D75FC7B00BE4EE7 /* a4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A4651D75FC7B00BE4EE7 /* a4.jpg */; };
+		16F3A4701D75FC7B00BE4EE7 /* a5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A4661D75FC7B00BE4EE7 /* a5.jpg */; };
+		16F3A4711D75FC7B00BE4EE7 /* a6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A4671D75FC7B00BE4EE7 /* a6.jpg */; };
+		16F3A4721D75FC7B00BE4EE7 /* a7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A4681D75FC7B00BE4EE7 /* a7.jpg */; };
+		16F3A4731D75FC7B00BE4EE7 /* a8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A4691D75FC7B00BE4EE7 /* a8.jpg */; };
+		16F3A4741D75FC7B00BE4EE7 /* a9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A46A1D75FC7B00BE4EE7 /* a9.jpg */; };
+		16F3A4751D75FC7B00BE4EE7 /* a10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16F3A46B1D75FC7B00BE4EE7 /* a10.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +86,49 @@
 		1605572D1D750B6F00E31CC1 /* Elliev2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Elliev2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		160557311D750B6F00E31CC1 /* Elliev2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Elliev2UITests.m; sourceTree = "<group>"; };
 		160557331D750B6F00E31CC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16F3A4281D75279300BE4EE7 /* 13407014_1749903378590592_1549225142529320261_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13407014_1749903378590592_1549225142529320261_n.jpg; sourceTree = "<group>"; };
+		16F3A42A1D7527D100BE4EE7 /* imageedit_1_9176689896.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageedit_1_9176689896.png; sourceTree = "<group>"; };
+		16F3A42C1D75340900BE4EE7 /* ruby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ruby.png; sourceTree = "<group>"; };
+		16F3A42E1D7534ED00BE4EE7 /* heart.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heart.gif; sourceTree = "<group>"; };
+		16F3A4301D75357D00BE4EE7 /* Collares.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collares.h; sourceTree = "<group>"; };
+		16F3A4311D75357D00BE4EE7 /* Collares.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Collares.m; sourceTree = "<group>"; };
+		16F3A4341D7535D200BE4EE7 /* cellColl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellColl.h; sourceTree = "<group>"; };
+		16F3A4351D7535D200BE4EE7 /* cellColl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellColl.m; sourceTree = "<group>"; };
+		16F3A4361D7535D200BE4EE7 /* cellColl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellColl.xib; sourceTree = "<group>"; };
+		16F3A43A1D7537A300BE4EE7 /* CollaresDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollaresDetails.h; sourceTree = "<group>"; };
+		16F3A43B1D7537A300BE4EE7 /* CollaresDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollaresDetails.m; sourceTree = "<group>"; };
+		16F3A43D1D753A6F00BE4EE7 /* c1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c1.jpg; sourceTree = "<group>"; };
+		16F3A43E1D753A6F00BE4EE7 /* c2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c2.jpg; sourceTree = "<group>"; };
+		16F3A43F1D753A6F00BE4EE7 /* c4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c4.jpg; sourceTree = "<group>"; };
+		16F3A4401D753A6F00BE4EE7 /* c5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c5.jpg; sourceTree = "<group>"; };
+		16F3A4411D753A6F00BE4EE7 /* c6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c6.jpg; sourceTree = "<group>"; };
+		16F3A4421D753A6F00BE4EE7 /* c7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c7.jpg; sourceTree = "<group>"; };
+		16F3A4431D753A6F00BE4EE7 /* c8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c8.jpg; sourceTree = "<group>"; };
+		16F3A4441D753A6F00BE4EE7 /* c9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c9.jpg; sourceTree = "<group>"; };
+		16F3A4451D753A6F00BE4EE7 /* c10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c10.jpg; sourceTree = "<group>"; };
+		16F3A44F1D753B2700BE4EE7 /* c3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c3.jpg; sourceTree = "<group>"; };
+		16F3A4511D75D01000BE4EE7 /* paypal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paypal.png; sourceTree = SOURCE_ROOT; };
+		16F3A4551D75F0A400BE4EE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		16F3A4571D75F89600BE4EE7 /* Aretes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aretes.h; sourceTree = "<group>"; };
+		16F3A4581D75F89600BE4EE7 /* Aretes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aretes.m; sourceTree = "<group>"; };
+		16F3A45A1D75F8B300BE4EE7 /* AretesDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AretesDetails.h; sourceTree = "<group>"; };
+		16F3A45B1D75F8B300BE4EE7 /* AretesDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AretesDetails.m; sourceTree = "<group>"; };
+		16F3A45D1D75F96300BE4EE7 /* cellAret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellAret.h; sourceTree = "<group>"; };
+		16F3A45E1D75F96300BE4EE7 /* cellAret.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellAret.m; sourceTree = "<group>"; };
+		16F3A45F1D75F96300BE4EE7 /* cellAret.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellAret.xib; sourceTree = "<group>"; };
+		16F3A4621D75FC7B00BE4EE7 /* a1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a1.jpg; path = ../../Ellie/Ellie/ProjectFinal/imgs/a1.jpg; sourceTree = "<group>"; };
+		16F3A4631D75FC7B00BE4EE7 /* a2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a2.jpg; path = ../../Ellie/Ellie/ProjectFinal/imgs/a2.jpg; sourceTree = "<group>"; };
+		16F3A4641D75FC7B00BE4EE7 /* a3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a3.jpg; path = ../../Ellie/Ellie/ProjectFinal/imgs/a3.jpg; sourceTree = "<group>"; };
+		16F3A4651D75FC7B00BE4EE7 /* a4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a4.jpg; path = ../../Ellie/Ellie/ProjectFinal/imgs/a4.jpg; sourceTree = "<group>"; };
+		16F3A4661D75FC7B00BE4EE7 /* a5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a5.jpg; path = ../../Ellie/Ellie/ProjectFinal/imgs/a5.jpg; sourceTree = "<group>"; };
+		16F3A4671D75FC7B00BE4EE7 /* a6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a6.jpg; path = ../../Ellie/Ellie/ProjectFinal/imgs/a6.jpg; sourceTree = "<group>"; };
+		16F3A4681D75FC7B00BE4EE7 /* a7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a7.jpg; path = ../../Ellie/Ellie/ProjectFinal/imgs/a7.jpg; sourceTree = "<group>"; };
+		16F3A4691D75FC7B00BE4EE7 /* a8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a8.jpg; path = ../../Ellie/Ellie/ProjectFinal/imgs/a8.jpg; sourceTree = "<group>"; };
+		16F3A46A1D75FC7B00BE4EE7 /* a9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a9.jpg; path = ../../Ellie/Ellie/ProjectFinal/imgs/a9.jpg; sourceTree = "<group>"; };
+		16F3A46B1D75FC7B00BE4EE7 /* a10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a10.jpg; path = ../../Ellie/Ellie/ProjectFinal/imgs/a10.jpg; sourceTree = "<group>"; };
+		314071B84B103537465977AB /* Pods-Elliev2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elliev2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elliev2/Pods-Elliev2.release.xcconfig"; sourceTree = "<group>"; };
+		654EB78F292A06ECA5133BB3 /* Pods_Elliev2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elliev2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79C14F6581A11C4E79CF9F6 /* Pods-Elliev2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elliev2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elliev2/Pods-Elliev2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CE5FAE1D020FA4B4E6EA80E /* Pods_Elliev2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +164,8 @@
 				160557251D750B6F00E31CC1 /* Elliev2Tests */,
 				160557301D750B6F00E31CC1 /* Elliev2UITests */,
 				1605570A1D750B6F00E31CC1 /* Products */,
+				245F0421EB1FAAE1F41E1429 /* Pods */,
+				54DBC67540E69D80CDA3CA14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,12 +182,15 @@
 		1605570B1D750B6F00E31CC1 /* Elliev2 */ = {
 			isa = PBXGroup;
 			children = (
+				16F3A4331D7535A100BE4EE7 /* Cells */,
+				16F3A4271D75275900BE4EE7 /* imgs */,
 				160557401D750C0A00E31CC1 /* Controllers */,
 				1605573F1D750C0400E31CC1 /* Main */,
 				160557151D750B6F00E31CC1 /* Main.storyboard */,
 				160557181D750B6F00E31CC1 /* Assets.xcassets */,
 				1605571A1D750B6F00E31CC1 /* LaunchScreen.storyboard */,
 				1605571D1D750B6F00E31CC1 /* Info.plist */,
+				16F3A4551D75F0A400BE4EE7 /* GoogleService-Info.plist */,
 				1605570C1D750B6F00E31CC1 /* Supporting Files */,
 			);
 			path = Elliev2;
@@ -152,8 +236,78 @@
 			children = (
 				160557121D750B6F00E31CC1 /* Start.h */,
 				160557131D750B6F00E31CC1 /* Start.m */,
+				16F3A4301D75357D00BE4EE7 /* Collares.h */,
+				16F3A4311D75357D00BE4EE7 /* Collares.m */,
+				16F3A43A1D7537A300BE4EE7 /* CollaresDetails.h */,
+				16F3A43B1D7537A300BE4EE7 /* CollaresDetails.m */,
+				16F3A4571D75F89600BE4EE7 /* Aretes.h */,
+				16F3A4581D75F89600BE4EE7 /* Aretes.m */,
+				16F3A45A1D75F8B300BE4EE7 /* AretesDetails.h */,
+				16F3A45B1D75F8B300BE4EE7 /* AretesDetails.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		16F3A4271D75275900BE4EE7 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				16F3A4621D75FC7B00BE4EE7 /* a1.jpg */,
+				16F3A4631D75FC7B00BE4EE7 /* a2.jpg */,
+				16F3A4641D75FC7B00BE4EE7 /* a3.jpg */,
+				16F3A4651D75FC7B00BE4EE7 /* a4.jpg */,
+				16F3A4661D75FC7B00BE4EE7 /* a5.jpg */,
+				16F3A4671D75FC7B00BE4EE7 /* a6.jpg */,
+				16F3A4681D75FC7B00BE4EE7 /* a7.jpg */,
+				16F3A4691D75FC7B00BE4EE7 /* a8.jpg */,
+				16F3A46A1D75FC7B00BE4EE7 /* a9.jpg */,
+				16F3A46B1D75FC7B00BE4EE7 /* a10.jpg */,
+				16F3A4511D75D01000BE4EE7 /* paypal.png */,
+				16F3A44F1D753B2700BE4EE7 /* c3.jpg */,
+				16F3A43D1D753A6F00BE4EE7 /* c1.jpg */,
+				16F3A43E1D753A6F00BE4EE7 /* c2.jpg */,
+				16F3A43F1D753A6F00BE4EE7 /* c4.jpg */,
+				16F3A4401D753A6F00BE4EE7 /* c5.jpg */,
+				16F3A4411D753A6F00BE4EE7 /* c6.jpg */,
+				16F3A4421D753A6F00BE4EE7 /* c7.jpg */,
+				16F3A4431D753A6F00BE4EE7 /* c8.jpg */,
+				16F3A4441D753A6F00BE4EE7 /* c9.jpg */,
+				16F3A4451D753A6F00BE4EE7 /* c10.jpg */,
+				16F3A42E1D7534ED00BE4EE7 /* heart.gif */,
+				16F3A42C1D75340900BE4EE7 /* ruby.png */,
+				16F3A42A1D7527D100BE4EE7 /* imageedit_1_9176689896.png */,
+				16F3A4281D75279300BE4EE7 /* 13407014_1749903378590592_1549225142529320261_n.jpg */,
+			);
+			name = imgs;
+			sourceTree = "<group>";
+		};
+		16F3A4331D7535A100BE4EE7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				16F3A4341D7535D200BE4EE7 /* cellColl.h */,
+				16F3A4351D7535D200BE4EE7 /* cellColl.m */,
+				16F3A4361D7535D200BE4EE7 /* cellColl.xib */,
+				16F3A45D1D75F96300BE4EE7 /* cellAret.h */,
+				16F3A45E1D75F96300BE4EE7 /* cellAret.m */,
+				16F3A45F1D75F96300BE4EE7 /* cellAret.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		245F0421EB1FAAE1F41E1429 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A79C14F6581A11C4E79CF9F6 /* Pods-Elliev2.debug.xcconfig */,
+				314071B84B103537465977AB /* Pods-Elliev2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		54DBC67540E69D80CDA3CA14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				654EB78F292A06ECA5133BB3 /* Pods_Elliev2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,9 +317,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 160557361D750B6F00E31CC1 /* Build configuration list for PBXNativeTarget "Elliev2" */;
 			buildPhases = (
+				F7BABC777DFFC38DCAA4BA63 /* [CP] Check Pods Manifest.lock */,
 				160557051D750B6F00E31CC1 /* Sources */,
 				160557061D750B6F00E31CC1 /* Frameworks */,
 				160557071D750B6F00E31CC1 /* Resources */,
+				5BDD384613125CB32ED506EF /* [CP] Embed Pods Frameworks */,
+				358E548E7C65B4558DCFC373 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,9 +416,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F3A44B1D753A6F00BE4EE7 /* c7.jpg in Resources */,
+				16F3A4611D75F96300BE4EE7 /* cellAret.xib in Resources */,
+				16F3A4711D75FC7B00BE4EE7 /* a6.jpg in Resources */,
+				16F3A46C1D75FC7B00BE4EE7 /* a1.jpg in Resources */,
+				16F3A44C1D753A6F00BE4EE7 /* c8.jpg in Resources */,
+				16F3A46D1D75FC7B00BE4EE7 /* a2.jpg in Resources */,
+				16F3A4461D753A6F00BE4EE7 /* c1.jpg in Resources */,
+				16F3A4491D753A6F00BE4EE7 /* c5.jpg in Resources */,
+				16F3A4731D75FC7B00BE4EE7 /* a8.jpg in Resources */,
 				1605571C1D750B6F00E31CC1 /* LaunchScreen.storyboard in Resources */,
+				16F3A4521D75D01000BE4EE7 /* paypal.png in Resources */,
+				16F3A4721D75FC7B00BE4EE7 /* a7.jpg in Resources */,
+				16F3A42F1D7534ED00BE4EE7 /* heart.gif in Resources */,
+				16F3A44D1D753A6F00BE4EE7 /* c9.jpg in Resources */,
+				16F3A4471D753A6F00BE4EE7 /* c2.jpg in Resources */,
+				16F3A4291D75279300BE4EE7 /* 13407014_1749903378590592_1549225142529320261_n.jpg in Resources */,
+				16F3A44E1D753A6F00BE4EE7 /* c10.jpg in Resources */,
+				16F3A46E1D75FC7B00BE4EE7 /* a3.jpg in Resources */,
+				16F3A42D1D75340900BE4EE7 /* ruby.png in Resources */,
+				16F3A4501D753B2700BE4EE7 /* c3.jpg in Resources */,
+				16F3A4741D75FC7B00BE4EE7 /* a9.jpg in Resources */,
 				160557191D750B6F00E31CC1 /* Assets.xcassets in Resources */,
+				16F3A4701D75FC7B00BE4EE7 /* a5.jpg in Resources */,
+				16F3A42B1D7527D100BE4EE7 /* imageedit_1_9176689896.png in Resources */,
+				16F3A4481D753A6F00BE4EE7 /* c4.jpg in Resources */,
+				16F3A46F1D75FC7B00BE4EE7 /* a4.jpg in Resources */,
+				16F3A4381D7535D300BE4EE7 /* cellColl.xib in Resources */,
+				16F3A4561D75F0A400BE4EE7 /* GoogleService-Info.plist in Resources */,
 				160557171D750B6F00E31CC1 /* Main.storyboard in Resources */,
+				16F3A44A1D753A6F00BE4EE7 /* c6.jpg in Resources */,
+				16F3A4751D75FC7B00BE4EE7 /* a10.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +466,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		358E548E7C65B4558DCFC373 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elliev2/Pods-Elliev2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BDD384613125CB32ED506EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elliev2/Pods-Elliev2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7BABC777DFFC38DCAA4BA63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		160557051D750B6F00E31CC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -288,6 +521,12 @@
 			files = (
 				160557141D750B6F00E31CC1 /* Start.m in Sources */,
 				160557111D750B6F00E31CC1 /* AppDelegate.m in Sources */,
+				16F3A4321D75357D00BE4EE7 /* Collares.m in Sources */,
+				16F3A4601D75F96300BE4EE7 /* cellAret.m in Sources */,
+				16F3A4591D75F89600BE4EE7 /* Aretes.m in Sources */,
+				16F3A45C1D75F8B300BE4EE7 /* AretesDetails.m in Sources */,
+				16F3A4371D7535D300BE4EE7 /* cellColl.m in Sources */,
+				16F3A43C1D7537A300BE4EE7 /* CollaresDetails.m in Sources */,
 				1605570E1D750B6F00E31CC1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +668,7 @@
 		};
 		160557371D750B6F00E31CC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A79C14F6581A11C4E79CF9F6 /* Pods-Elliev2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Elliev2/Info.plist;
@@ -440,6 +680,7 @@
 		};
 		160557381D750B6F00E31CC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 314071B84B103537465977AB /* Pods-Elliev2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Elliev2/Info.plist;
@@ -514,6 +755,7 @@
 				160557381D750B6F00E31CC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		160557391D750B6F00E31CC1 /* Build configuration list for PBXNativeTarget "Elliev2Tests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +764,7 @@
 				1605573B1D750B6F00E31CC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1605573C1D750B6F00E31CC1 /* Build configuration list for PBXNativeTarget "Elliev2UITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +773,7 @@
 				1605573E1D750B6F00E31CC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
