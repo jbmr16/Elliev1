@@ -22,7 +22,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblPrice;
 @property (strong, nonatomic) IBOutlet UILabel *lblTitle;
 @property (weak, nonatomic) IBOutlet UIButton *buybttn;
-@property (strong, nonatomic) IBOutlet UIView *CDetails;
+@property (strong, nonatomic) IBOutlet UIView *ADetails;
 
 
 @end
